@@ -101,7 +101,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.BackColor = Color.RosyBrown;
+            btnRegistrar.BackColor = Color.Silver;
             btnRegistrar.Location = new Point(655, 379);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(119, 41);
@@ -129,7 +129,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(800, 450);
             Controls.Add(textBox2);
             Controls.Add(numericUpDown1);

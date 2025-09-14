@@ -32,12 +32,13 @@
             lblProducto = new Label();
             lblCantidad = new Label();
             lblPrecioUnitario = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
+            dtpFecha = new DateTimePicker();
+            txtproducto = new TextBox();
             btnRegistrar = new Button();
-            numericUpDown1 = new NumericUpDown();
-            textBox2 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            nudCantidad = new NumericUpDown();
+            txtPrecioUnitario = new TextBox();
+            btnCancelar = new Button();
+            ((System.ComponentModel.ISupportInitialize)nudCantidad).BeginInit();
             SuspendLayout();
             // 
             // lblFecha
@@ -83,59 +84,70 @@
             lblPrecioUnitario.Text = "Precio Unitario";
             lblPrecioUnitario.Click += label4_Click;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 12F);
-            dateTimePicker1.Location = new Point(154, 95);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 29);
-            dateTimePicker1.TabIndex = 4;
+            dtpFecha.Font = new Font("Segoe UI", 12F);
+            dtpFecha.Location = new Point(154, 95);
+            dtpFecha.Name = "dtpFecha";
+            dtpFecha.Size = new Size(200, 29);
+            dtpFecha.TabIndex = 4;
             // 
-            // textBox1
+            // txtproducto
             // 
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(154, 163);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(113, 29);
-            textBox1.TabIndex = 5;
+            txtproducto.Font = new Font("Segoe UI", 12F);
+            txtproducto.Location = new Point(154, 163);
+            txtproducto.Name = "txtproducto";
+            txtproducto.Size = new Size(113, 29);
+            txtproducto.TabIndex = 5;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.BackColor = Color.Silver;
-            btnRegistrar.Location = new Point(655, 379);
+            btnRegistrar.BackColor = Color.WhiteSmoke;
+            btnRegistrar.Location = new Point(331, 371);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(119, 41);
             btnRegistrar.TabIndex = 6;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown1
+            // nudCantidad
             // 
-            numericUpDown1.Font = new Font("Segoe UI", 12F);
-            numericUpDown1.Location = new Point(154, 231);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 29);
-            numericUpDown1.TabIndex = 7;
+            nudCantidad.Font = new Font("Segoe UI", 12F);
+            nudCantidad.Location = new Point(154, 231);
+            nudCantidad.Name = "nudCantidad";
+            nudCantidad.Size = new Size(120, 29);
+            nudCantidad.TabIndex = 7;
             // 
-            // textBox2
+            // txtPrecioUnitario
             // 
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(155, 301);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(77, 29);
-            textBox2.TabIndex = 8;
+            txtPrecioUnitario.Font = new Font("Segoe UI", 12F);
+            txtPrecioUnitario.Location = new Point(155, 301);
+            txtPrecioUnitario.Name = "txtPrecioUnitario";
+            txtPrecioUnitario.Size = new Size(77, 29);
+            txtPrecioUnitario.TabIndex = 8;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = Color.WhiteSmoke;
+            btnCancelar.Location = new Point(191, 371);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(119, 41);
+            btnCancelar.TabIndex = 9;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = false;
             // 
             // Ventas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(numericUpDown1);
+            ClientSize = new Size(508, 450);
+            Controls.Add(btnCancelar);
+            Controls.Add(txtPrecioUnitario);
+            Controls.Add(nudCantidad);
             Controls.Add(btnRegistrar);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txtproducto);
+            Controls.Add(dtpFecha);
             Controls.Add(lblPrecioUnitario);
             Controls.Add(lblCantidad);
             Controls.Add(lblProducto);
@@ -143,7 +155,7 @@
             Name = "Ventas";
             Text = "Cantidad";
             Load += Ventas_Load;
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudCantidad).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -154,10 +166,11 @@
         private Label lblProducto;
         private Label lblCantidad;
         private Label lblPrecioUnitario;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox1;
+        private DateTimePicker dtpFecha;
+        private TextBox txtproducto;
         private Button btnRegistrar;
-        private NumericUpDown numericUpDown1;
-        private TextBox textBox2;
+        private NumericUpDown nudCantidad;
+        private TextBox txtPrecioUnitario;
+        private Button btnCancelar;
     }
 }

@@ -142,6 +142,7 @@
             Controls.Add(lblFecha);
             Name = "Ventas";
             Text = "Cantidad";
+            Load += Ventas_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
